@@ -11,3 +11,4 @@ Related to efficient training/fine-tuning design for LLMs
   - QWHA contributes to efficient LLM design by offering a PEFT method that is both computationally efficient during training (due to the WHA design) and effective at preserving accuracy in highly compressed, efficient LLMs for inference (due to its QA initialization scheme)
 5. Deng, Y., Zhang, A., Gurses, S., Wang, N., Yang, Z., & Yin, P. (2025). Cloq: Enhancing fine-tuning of quantized llms via calibrated lora initialization. arXiv preprint [arXiv:2501.18475](https://arxiv.org/pdf/2501.18475)
 - CLoQ is an efficient design because it focuses on minimizing the computational cost of the initialization step while maximizing the final performance of the memory-efficient combination of LoRA and quantization, a critical area for efficient LLM design
+6. 
