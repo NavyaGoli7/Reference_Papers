@@ -5,7 +5,7 @@ Related to efficient training/fine-tuning design for LLMs
 - The main goal of TPA is to address the severe memory overhead caused by Key-Value (KV) caches during autoregressive inference. This is crucial for enabling LLMs to process longer context sequences.
   
  <del>2. Yang, X., Leng, J., Guo, G., Zhao, J., Nakada, R., Zhang, L., ... & Chen, B. (2024). S $^{2} $ FT: Efficient, scalable and generalizable LLM fine-tuning by structured sparsity. Advances in Neural Information Processing Systems, 37, 59912-59947.[paper link] (https://proceedings.neurips.cc/paper_files/paper/2024/file/6e3b9fb0c0c56cf6e1ee61e6a068fca4-Paper-Conference.pdf)
-  - The fundamental contribution of S2FT is its ability to concurrently achieve state-of-the-art (SOTA) fine-tuning performance, training efficiency, and inference scalability.</del>
+ <del> - The fundamental contribution of S2FT is its ability to concurrently achieve state-of-the-art (SOTA) fine-tuning performance, training efficiency, and inference scalability.</del>
   
 3. Li, K., Han, S., Su, Q., Li, W., Cai, Z., & Ji, S. (2025). Uni-LoRA: One Vector is All You Need. arXiv preprint [arXiv:2506.00799](https://arxiv.org/pdf/2506.00799)
 - Uni-LoRA's specific "one-vector-only" solution uses an efficient, fixed, and isometric projection matrix that enables global parameter sharing and requires training only this single vector θ\_d to reconstruct parameters for the entire LLM, achieving state-of-the-art parameter efficiency with O(D) time complexity
@@ -21,8 +21,10 @@ Related to efficient training/fine-tuning design for LLMs
   
 9. Wu, Y., Li, J., Tian, C., Guo, Z., & Li, L. (2025). Memory-Efficient Federated Fine-Tuning of Large Language Models via Layer Pruning. arXiv preprint [arXiv:2508.17209](https://arxiv.org/pdf/2508.17209)
   - The core contribution of this work is introducing a paradigm for memory-efficient federated fine-tuning of LLMs, specifically designed to overcome severe memory limitations on resource-constrained devices.
+    
 <del> 10. Gao, L., Ziashahabi, A., Niu, Y., Avestimehr, S., & Annavaram, M. (2025, November). MobiZO: Enabling efficient llm fine-tuning at the edge via inference engines. In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (pp. 20217-20234).[paper link] (https://aclanthology.org/2025.emnlp-main.1022.pdf)
-  - This paper describes an efficient fine-tuning design that achieves efficiency by adopting ZO optimization (to save memory) and then introducing novel parallelization techniques (MP-LoRA, outer-loop, and inner-loop) to dramatically increase the computation speed and effectiveness of ZO optimization on resource-constrained edge devices. </del>
+ <del>  - This paper describes an efficient fine-tuning design that achieves efficiency by adopting ZO optimization (to save memory) and then introducing novel parallelization techniques (MP-LoRA, outer-loop, and inner-loop) to dramatically increase the computation speed and effectiveness of ZO optimization on resource-constrained edge devices. </del>
+  
 11. Mohanty, A., Kang, G., Gao, L., & Annavaram, M. (2025). DistilLock: Safeguarding LLMs from Unauthorized Knowledge Distillation on the Edge. arXiv preprint [arXiv:2510.16716](https://arxiv.org/pdf/2510.16716)
   - The work tackles the challenge of enabling LLM personalization by fine-tuning models directly on edge devices, a process made possible by the growth of edge-centric ML accelerators and resource-efficient training algorithms
 
